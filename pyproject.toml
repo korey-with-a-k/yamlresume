@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yamlresume"
+version = "0.0.1"
+authors = [
+  { name="korey-with-a-k" },
+]
+description = "Generate an HTML resume from a YAML file"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "bottle >= 0.12.25",
+    "lxml >= 4.9.2",
+    "numpy >= 1.24.3",
+    "pypng >= 0.20220715.0",
+    "PyYAML >= 6.0",
+    "qrcode >= 7.4.2",
+    "scipy >= 1.10.1",
+    "typing-extensions >= 4.6.0",
+]
+
+[project.scripts]
+yamlresume = "yamlresume.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/korey-with-a-k/yamlresume"
+"Bug Tracker" = "https://github.com/korey-with-a-k/yamlresume/issues"
